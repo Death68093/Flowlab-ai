@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+.auth-section, .chatbot-section {
+  margin: 20px 0;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#output {
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Container for each result */
+.code-item {
+  max-width: 600px;
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header style for each code item */
+.code-header {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+/* Code content styling */
+.code-content {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #2e2e2e;
+  color: #fff;
+  padding: 1em;
+  padding-top: 2.5em;
+  border-radius: 5px;
+  display: block;
+  margin-top: 1em;
+  font-size: 0.95em;
+  position: relative;
+}
+
+/* Copy button positioned at the top-right of the code content */
+.copy-btn {
+  position: sticky;
+  top: 0.5em;
+  right: 0.5em;
+  background-color: #007acc;
+  color: #fff;
+  padding: 0.3em 0.7em;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+.copy-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Code block appearance */
+pre {
+  font-family: Consolas, "Courier New", monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
