@@ -1,1 +1,25 @@
-# Flowlab-ai
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script> <!-- Load Supabase first -->
+</head>
+<body>
+    <nav>
+        <a href="index.html">Chatbot</a> |
+        <a href="addCode.html">Add Code</a>
+    </nav>
+
+    <div class="chat-container">
+        <h1>Code Search Chatbot</h1>
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="Type your query or #hashtag" />
+        <button onclick="handleChat()">Search</button>
+    </div>
+    
+    <!-- Load chatbot.js after Supabase library is fully loaded -->
+    <script src="chatbot.js"></script>
+</body>
+</html>
